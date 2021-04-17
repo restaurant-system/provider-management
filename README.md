@@ -1,2 +1,2 @@
-# provider-management
-Provider management service
+# Provider Management Service
+Provider management service.
