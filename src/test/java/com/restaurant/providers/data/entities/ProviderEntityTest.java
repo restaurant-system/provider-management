@@ -27,14 +27,21 @@ public class ProviderEntityTest {
     @Test
     public void checkEqualsAndHashCodeDistinctName() {
         ProviderEntity providerEntity = new ProviderEntity(1, "Walmart", ProviderType.SUPER_MARKET);
-        ProviderEntity providerEntityCopy = new ProviderEntity(1, "Chedraui", ProviderType.SUPER_MARKET);
-        assertNotEquals(providerEntity, providerEntityCopy);
+        ProviderEntity otherProviderEntity = new ProviderEntity(1, "Chedraui", ProviderType.SUPER_MARKET);
+        assertNotEquals(providerEntity, otherProviderEntity);
     }
 
     @Test
     public void checkEqualsAndHashCodeDistinctType() {
         ProviderEntity providerEntity = new ProviderEntity(1, "Walmart", ProviderType.SUPER_MARKET);
-        ProviderEntity providerEntityCopy = new ProviderEntity(1, "Walmart", ProviderType.BUTCHER_SHOP);
-        assertNotEquals(providerEntity, providerEntityCopy);
+        ProviderEntity otherProviderEntity = new ProviderEntity(1, "Walmart", ProviderType.BUTCHER_SHOP);
+        assertNotEquals(providerEntity, otherProviderEntity);
+    }
+
+    @Test
+    public void checkToStringConsistency() {
+        ProviderEntity providerEntity = new ProviderEntity(1,"Walmart", ProviderType.SUPER_MARKET);
+        String expected = "ProviderEntity { id = 1, name = \"Walmart\", type = SUPER_MARKET }";
+        assertEquals(expected, providerEntity.toString());
     }
 }

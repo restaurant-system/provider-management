@@ -29,4 +29,13 @@ public class ProviderEntity implements Serializable  {
     public int hashCode() {
         return Objects.hash(id, name, type);
     }
+
+    @Override
+    public String toString() {
+        return "ProviderEntity { " +
+                "id = " + id +
+                ", name = \"" + name + "\"" +
+                ", type = " + type +
+                " }";
+    }
 }
