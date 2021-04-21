@@ -36,4 +36,12 @@ public class ProviderTypeEntityTest {
         ProviderTypeEntity otherProviderTypeEntity = new ProviderTypeEntity("SUPERMARKET", "Super market!!!");
         assertNotEquals(providerTypeEntity, otherProviderTypeEntity);
     }
+
+    @Test
+    public void checkToStringConsistency() {
+        ProviderTypeEntity providerTypeEntity = new ProviderTypeEntity("SUPERMARKET", "Supermarket");
+        String expected = "ProviderTypeEntity { id = null, type = \"SUPERMARKET\", friendlyName = \"Supermarket\" }";
+        assertEquals(expected, providerTypeEntity.toString());
+    }
+
 }

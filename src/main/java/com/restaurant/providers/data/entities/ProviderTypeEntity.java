@@ -32,4 +32,13 @@ public class ProviderTypeEntity implements Serializable {
     public int hashCode() {
         return Objects.hash(id, type, friendlyName);
     }
+
+    @Override
+    public String toString() {
+        return "ProviderTypeEntity { " +
+                "id = " + id +
+                ", type = \"" + type + "\"" +
+                ", friendlyName = \"" + friendlyName + "\"" +
+                " }";
+    }
 }
