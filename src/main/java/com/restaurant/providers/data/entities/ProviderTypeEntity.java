@@ -1,8 +1,10 @@
 package com.restaurant.providers.data.entities;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class ProviderTypeEntity {
+public class ProviderTypeEntity implements Serializable {
+    private static final long serialVersionUID = 4396550301125213198L;
 
     private final Integer id;
     private final String type;

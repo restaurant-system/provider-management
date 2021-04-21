@@ -4,11 +4,10 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class ProviderEntity implements Serializable  {
+    private static final long serialVersionUID = 7115077407837994358L;
 
     private final Integer id;
-
     private final String name;
-
     private final ProviderType type;
 
     public ProviderEntity(Integer id, String name, ProviderType  type) {
