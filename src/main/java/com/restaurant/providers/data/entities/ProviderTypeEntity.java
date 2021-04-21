@@ -14,12 +14,16 @@ public class ProviderTypeEntity {
         this.friendlyName = friendlyName;
     }
 
+    public ProviderTypeEntity(final String type, final String friendlyName) {
+        this(null, type, friendlyName);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ProviderTypeEntity that = (ProviderTypeEntity) o;
-        return id.equals(that.id) && type.equals(that.type) && friendlyName.equals(that.friendlyName);
+        return Objects.equals(id, that.id) && type.equals(that.type) && friendlyName.equals(that.friendlyName);
     }
 
     @Override
