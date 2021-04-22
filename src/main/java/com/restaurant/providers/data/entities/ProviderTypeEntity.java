@@ -20,6 +20,18 @@ public class ProviderTypeEntity implements Serializable {
         this(null, type, friendlyName);
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getFriendlyName() {
+        return friendlyName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
