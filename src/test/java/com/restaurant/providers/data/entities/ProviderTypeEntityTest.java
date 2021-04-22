@@ -2,7 +2,8 @@ package com.restaurant.providers.data.entities;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 /**
  * Unit test class for {@link ProviderTypeEntity}.
@@ -10,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ProviderTypeEntityTest {
 
     @Test
-    public void checkEqualsAndHashCodeConsistency(){
+    public void checkEqualsAndHashCodeConsistency() {
         ProviderTypeEntity providerTypeEntity = new ProviderTypeEntity(1, "SUPERMARKET", "Supermarket");
         ProviderTypeEntity providerTypeEntityCopy = new ProviderTypeEntity(1, "SUPERMARKET", "Supermarket");
         assertEquals(providerTypeEntity, providerTypeEntityCopy);

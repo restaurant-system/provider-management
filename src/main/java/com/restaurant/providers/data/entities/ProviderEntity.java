@@ -3,7 +3,7 @@ package com.restaurant.providers.data.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class ProviderEntity implements Serializable  {
+public class ProviderEntity implements Serializable {
     private static final long serialVersionUID = 7115077407837994358L;
 
     private final Integer id;
