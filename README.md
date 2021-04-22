@@ -7,7 +7,7 @@ This component is responsible for provider management.
 Developing the following user story:
 
 **As**: manager  
-**need**: a management service
+**need**: a management service  
 **for**: creating, updating and querying the restaurant's providers.
 
 **Acceptance criteria**
